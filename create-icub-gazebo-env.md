@@ -1,3 +1,5 @@
+# How to create an environment to simulate the iCub robot in Gazebo
+
 ## Check the environment
 
 First of all, check if conda is correctly installed:
