@@ -42,6 +42,8 @@ If you are on Windows and you use Visual Studio 2019, you also need to install:
 conda install -c conda-forge vs2019_win-64
 ~~~
 
+## Build the library
+
 After installing the dependencies, you can then create a build directory and build the project as usual: 
 ~~~
 mkdir build
