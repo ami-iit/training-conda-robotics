@@ -37,12 +37,16 @@ conda install -c conda-forge -c robotology python=3.8
 
 This will appropriately uninstall the packages that depend on Python 3.9, and install the equivalent version that depend on Python 3.8.
 
+## Create a new environment with both ROS and robotology packages
 An alternative strategy (that may be easier in some cases) is just to create a new environment, called for example `robrosenv`, and install directly all the required packages:
 ~~~
 conda create -n robrosenv
 conda activate robrosenv
 conda install -c conda-forge -c robostack -c robotology icub-models gazebo-yarp-plugins ros-noetic-desktop
 ~~~
+
+
+## Test ROS installed via conda
 
 In both cases, in the environment in which `ros-noetic-desktop` is installed, you should be able to run ROS programs and tools such as RViz. 
 To test this, open two terminals, in both of which you first run `conda activate robrosenv`. 
