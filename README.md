@@ -11,6 +11,7 @@ A repo containing training material related to the use of Conda in robotics cont
 * [**How to create an environment to quickly develop a project**](create-env-for-library.md): Example on how to create an environment to quickly test a library.
 
 ## Related Material
+* [**Conda Cheat sheet**](https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html): Simple cheat sheet on conda commands.
 * [**Technical Talk: Conda, mamba, boa & co: A snake pit for cross-platform, language agnostic packages**](https://www.youtube.com/watch?v=4sVeqG3eP0A): Introductory video on Conda and related technologies.
 * [**Introduction to Conda**](https://geohackweek.github.io/datasharing/01-conda-tutorial/): Small introduction to Conda.
 * [**RoboStack ROS Noetic**](https://github.com/RoboStack/ros-noetic): Landing page of the RoboStack project to install ROS Noetic packages.
