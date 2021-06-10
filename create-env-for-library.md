@@ -18,7 +18,7 @@ cd idyntree
 
 You can create a conda environment inside it, using the `-p` option of conda create to create an environment in a given directory, as opposed to create an environment by specifying a name (with `-n`)
 ~~~
-conda -p ./env
+conda create -p ./env
 ~~~
 
 After you create this environment, you can list all the environments in the system with `conda env list`:
@@ -40,6 +40,10 @@ conda install -c conda-forge -c robotology compilers cmake pkg-config ninja irrl
 If you are on Windows and you use Visual Studio 2019, you also need to install:
 ~~~
 conda install -c conda-forge vs2019_win-64
+~~~
+If you are on Linux, you also need:
+~~~
+conda install -c conda-forge bash-completion expat-cos6-x86_64 freeglut libdc1394 libselinux-cos6-x86_64 libxau-cos6-x86_64 libxcb-cos6-x86_64 libxdamage-cos6-x86_64 libxext-cos6-x86_64 libxfixes-cos6-x86_64 libxxf86vm-cos6-x86_64 mesalib mesa-libgl-cos6-x86_64
 ~~~
 
 ## Build the library
