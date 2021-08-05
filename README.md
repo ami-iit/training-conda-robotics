@@ -2,7 +2,7 @@
 A repo containing training material related to the use of Conda in robotics context.
 
 ## Background Material
-* [**How to install miniforge**](https://github.com/robotology/robotology-superbuild/blob/master/doc/install-miniforge.md): Explanation on the recommended way to install miniforge.
+* [**How to install mambaforge**](https://github.com/robotology/robotology-superbuild/blob/master/doc/install-mambaforge.md): Explanation on the recommended way to install mambaforge.
 * [**How to install robotology software via conda**](https://github.com/robotology/robotology-superbuild/blob/master/doc/conda-forge.md): Explanation on how to install robotology software via conda.
 
 ## Hands On
