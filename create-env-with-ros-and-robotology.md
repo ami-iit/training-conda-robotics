@@ -5,8 +5,8 @@
 First of all, try to install a ROS package such as `ros-noetic-desktop` on the `rosenv` environment created in the [previous hands on](create-icub-gazebo-env.md):
 
 ~~~
-conda activate robenv
-conda install -c conda-forge -c robostack ros-noetic-desktop
+mamba activate robenv
+mamba install -c conda-forge -c robostack ros-noetic-desktop
 ~~~
 
 As of June 2021, this will result in an error such as:
@@ -32,7 +32,7 @@ However, on RoboStack only Python 3.8 is supported, so this creates a problem of
 
 You can fix this by explicitly asking for Python 3.8:
 ~~~
-conda install -c conda-forge -c robotology python=3.8
+mamba install -c conda-forge -c robotology python=3.8
 ~~~
 
 This will appropriately uninstall the packages that depend on Python 3.9, and install the equivalent version that depend on Python 3.8.
@@ -40,9 +40,9 @@ This will appropriately uninstall the packages that depend on Python 3.9, and in
 ## Create a new environment with both ROS and robotology packages
 An alternative strategy (that may be easier in some cases) is just to create a new environment, called for example `robrosenv`, and install directly all the required packages:
 ~~~
-conda create -n robrosenv
-conda activate robrosenv
-conda install -c conda-forge -c robostack -c robotology icub-models gazebo-yarp-plugins ros-noetic-desktop
+mamba create -n robrosenv
+mamba activate robrosenv
+mamba install -c conda-forge -c robostack -c robotology icub-models gazebo-yarp-plugins ros-noetic-desktop
 ~~~
 
 

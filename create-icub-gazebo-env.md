@@ -2,9 +2,9 @@
 
 ## Check the environment
 
-First of all, check if conda is correctly installed:
+First of all, check if conda and mamba are correctly installed:
 ~~~
-conda info
+mamba info
 ~~~
 
 The output should be something like:
@@ -15,40 +15,38 @@ The output should be something like:
 
 If that works fine, you can list all the existing environments with:
 ~~~
-conda env list
+mamba env list
 ~~~
 
 If you just installed `conda` you should only have the `base` environment.
-It is recommended to not install scientific-related software in the `base`  environment, and only use `base` to install conda and related tools.
+It is recommended to not install scientific-related software in the `base`  environment, and only use `base` to install conda and related tools (such as `mamba`).
 
 ## Create the environment and install packages
 Let's create an environment called `robenv` 
 ~~~
-conda create -n robenv
+mamba create -n robenv
 ~~~
 
 We can activate it via:
 ~~~
-conda activate robenv
+mamba activate robenv
 ~~~
 
 Then install the packages necessary to run a Gazebo simulation of iCub:
 ~~~
-conda install -c conda-forge -c robotology icub-models gazebo-yarp-plugins
+mamba install -c conda-forge -c robotology icub-models gazebo-yarp-plugins
 ~~~
 
 After the installation is completed, you can see the packages that are now installed in the environment with:
 ~~~
-conda list
+mamba list
 ~~~
-
-➡️ Note: if the installation process is slow, you can try to use [`mamba`](https://github.com/mamba-org/mamba), a fast drop-in replacement for conda, with `conda install -c conda-forge -n base mamba` . `mamba` is a drop-in replacement for conda, so you should be able to run all the documented steps with `mamba` in place of `conda` and everything should work.
 
 ## Run the simulation
 
 Open three terminals, and in each one first of all run:
 ~~~
-conda activate robenv
+mamba activate robenv
 ~~~
 to activate the environment. 
 

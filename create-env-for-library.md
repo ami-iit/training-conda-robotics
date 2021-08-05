@@ -18,32 +18,32 @@ cd idyntree
 
 You can create a conda environment inside it, using the `-p` option of conda create to create an environment in a given directory, as opposed to create an environment by specifying a name (with `-n`)
 ~~~
-conda create -p ./env
+mamba create -p ./env
 ~~~
 
 After you create this environment, you can list all the environments in the system with `conda env list`:
 ~~~
-conda env list
+mamba env list
 ~~~
 
 In this list, you should see the difference between the one that you created with a name (with `-n`) that were created in `miniforge3\envs`, and the one created with the directory (`-p`) that are in arbitrary directories.
 
 After you created the environment by specifying its location, you can activate it with:
 ~~~
-conda activate ./env
+mamba activate ./env
 ~~~
 
 Then you can install the dependencies of the project, both its dependencies and the tools necessary to build:
 ~~~
-conda install -c conda-forge -c robotology compilers cmake pkg-config ninja irrlicht yarp osqp-eigen icub-main eigen ipopt libxml2
+mamba install -c conda-forge -c robotology compilers cmake pkg-config ninja irrlicht yarp osqp-eigen icub-main eigen ipopt libxml2
 ~~~
 If you are on Windows and you use Visual Studio 2019, you also need to install:
 ~~~
-conda install -c conda-forge vs2019_win-64
+mamba install -c conda-forge vs2019_win-64
 ~~~
 If you are on Linux, you also need:
 ~~~
-conda install -c conda-forge bash-completion expat-cos6-x86_64 freeglut libdc1394 libselinux-cos6-x86_64 libxau-cos6-x86_64 libxcb-cos6-x86_64 libxdamage-cos6-x86_64 libxext-cos6-x86_64 libxfixes-cos6-x86_64 libxxf86vm-cos6-x86_64 mesalib mesa-libgl-cos6-x86_64
+mamba install -c conda-forge bash-completion expat-cos6-x86_64 freeglut libdc1394 libselinux-cos6-x86_64 libxau-cos6-x86_64 libxcb-cos6-x86_64 libxdamage-cos6-x86_64 libxext-cos6-x86_64 libxfixes-cos6-x86_64 libxxf86vm-cos6-x86_64 mesalib mesa-libgl-cos6-x86_64
 ~~~
 
 ## Build the library
