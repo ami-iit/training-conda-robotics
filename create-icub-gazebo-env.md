@@ -29,7 +29,7 @@ mamba create -n robenv
 
 We can activate it via:
 ~~~
-mamba activate robenv
+conda activate robenv
 ~~~
 
 Then install the packages necessary to run a Gazebo simulation of iCub:
